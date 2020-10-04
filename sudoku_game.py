@@ -5,6 +5,7 @@ import pandas as pd
 
 
 pygame.init()
+pygame.font.init()
 
 screen_width = 600
 screen_height = 800
@@ -60,12 +61,14 @@ def write_text(surface, output, X, Y):
 
 if __name__ == '__main__':
     screen = pygame.display.set_mode((screen_width, screen_height))
+    pygame.display.set_caption('Sudoku Solver')
     sudoku = random_sudoku()
 
     font = pygame.font.Font('freesansbold.ttf', 25)
     space_text = font.render(
         'Press space to reveal the solution', True, white)
-
+    clock = pygame.time.Clock()
+    clock.tick(30)
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
