@@ -28,7 +28,6 @@ def random_sudoku():
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]
     ]
-    # DODAC WARUNEK ZE JAK NIE SAME ZERA TO return puzzle
     if all(a == 0 for a in puzzle):
         return puzzle
     else:

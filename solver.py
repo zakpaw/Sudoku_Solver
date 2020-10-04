@@ -55,7 +55,7 @@ def number_fits(board, num, pos):
 
 
 '''
-hardest = [
+hard = [
     [8, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 3, 6, 0, 0, 0, 0, 0],
     [0, 7, 0, 0, 9, 0, 2, 0, 0],
@@ -66,8 +66,8 @@ hardest = [
     [0, 0, 8, 5, 0, 0, 0, 1, 0],
     [0, 9, 0, 0, 0, 0, 4, 0, 0]
 ]
-print_board(hardest)
-solution(hardest)
+print_board(hard)
+solution(hard)
 print('\n====== SOLUTION: ======')
-print_board(hardest)
+print_board(hard)
 '''
